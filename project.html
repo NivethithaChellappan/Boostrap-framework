@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project (No JS)</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" 
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    }
+
+    header {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    }
+
+    #gallery img {
+    transition: transform 0.3s ease;
+    }
+
+    #gallery img:hover {
+    transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">My Project</a>
+      <!-- static menu only -->
+      <div class="d-none d-md-block">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-3 fw-bold">Bootstrap Project</h1>
+      <p class="lead">Responsive template built with only Bootstrap CSS, no JavaScript</p>
+      <a href="#features" class="btn btn-light btn-lg mt-3">Explore</a>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Features</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-phone display-4 text-primary"></i>
+          <h4 class="mt-3">Responsive</h4>
+          <p>Works on all devices using Bootstrap grid.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-lightning display-4 text-success"></i>
+          <h4 class="mt-3">Fast</h4>
+          <p>Optimized CSS-only design without extra scripts.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-shield-lock display-4 text-warning"></i>
+          <h4 class="mt-3">Secure</h4>
+          <p>Clean & minimal structure for better security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?1" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?2" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?3" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?4" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?5" class="img-fluid rounded" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <img src="https://picsum.photos/400/300?6" class="img-fluid rounded" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Pricing Plans</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card border-primary">
+            <div class="card-body">
+              <h4 class="card-title">Basic</h4>
+              <p class="card-text fs-2 fw-bold">$9</p>
+              <p>1 Website <br> Email Support <br> Basic Features</p>
+              <a href="#" class="btn btn-primary">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-success">
+            <div class="card-body">
+              <h4 class="card-title">Pro</h4>
+              <p class="card-text fs-2 fw-bold">$29</p>
+              <p>5 Websites <br> Priority Support <br> Advanced Features</p>
+              <a href="#" class="btn btn-success">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h4 class="card-title">Enterprise</h4>
+              <p class="card-text fs-2 fw-bold">$99</p>
+              <p>Unlimited Sites <br> 24/7 Support <br> All Features</p>
+              <a href="#" class="btn btn-warning">Choose</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">What People Say</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded">
+            <p>"This template is super easy to use and very clean."</p>
+            <h6 class="fw-bold">- John D.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded">
+            <p>"Perfect for quick projects. No JS needed!"</p>
+            <h6 class="fw-bold">- Sarah L.</h6>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="p-4 border rounded">
+            <p>"Lightweight and responsive design. Love it!"</p>
+            <h6 class="fw-bold">- Ahmed K.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <form class="w-75 mx-auto">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Your email">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="5" placeholder="Write your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 My Bootstrap Project | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+
